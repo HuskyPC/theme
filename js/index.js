@@ -76,48 +76,89 @@ function changeColorTheme(id) {
   }
 }
 // slider
+// window.addEventListener("load", function () {
+//   const slider = doc.querySelector(".slider");
+//   const sliderWrapper = doc.querySelector(".slider-wrapper");
+
+//   const sliderMain = doc.querySelector(".slider-main");
+//   const nexBtn = doc.querySelector(".slider-next");
+//   const prevBtn = doc.querySelector(".slider-prev");
+//   const sliderItem = doc.querySelectorAll(".slider-item");
+//   const sliderItemWidth = sliderItem[0].offsetWidth;
+//   const sliderLength = sliderItem.length;
+//   let positionX = 0;
+//   let index = 0;
+//   let width = sumSliderItem(sliderItem, sliderWrapper.offsetWidth, 30);
+//   console.log("🚀 ~ file: index.js:58 ~ width:", width);
+
+//   nexBtn.addEventListener("click", function () {
+//     handleChangeSlide(1);
+//   });
+//   prevBtn.addEventListener("click", function () {
+//     handleChangeSlide(-1);
+//   });
+//   function handleChangeSlide(dir) {
+//     if (dir === 1) {
+//       positionX = positionX - (sliderItemWidth + 30);
+//       sliderMain.style = `transform: translateX(${positionX}px)`;
+//       console.log("next", positionX);
+//     } else if (dir === -1) {
+//       console.log("prev");
+//     }
+//   }
+//   function sumSliderItem(arr, width, gap = 0) {
+//     console.log(
+//       "🚀 ~ file: index.js:76 ~ sumSliderItem ~ arr, width, gap:",
+//       arr,
+//       width,
+//       gap
+//     );
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//       sum += arr[i].offsetWidth;
+//     }
+//     console.log("🚀 ~ file: index.js:85 ~ sumSliderItem ~ sum:", sum);
+//     return Math.floor((sum + (arr.length - 1) * gap) / width);
+//   }
+// });
 window.addEventListener("load", function () {
-  const slider = doc.querySelector(".slider");
-  const sliderWrapper = doc.querySelector(".slider-wrapper");
-
-  const sliderMain = doc.querySelector(".slider-main");
-  const nexBtn = doc.querySelector(".slider-next");
-  const prevBtn = doc.querySelector(".slider-prev");
-  const sliderItem = doc.querySelectorAll(".slider-item");
-  const sliderItemWidth = sliderItem[0].offsetWidth;
-  const sliderLength = sliderItem.length;
-  let positionX = 0;
-  let index = 0;
-  let width = sumSliderItem(sliderItem, sliderWrapper.offsetWidth, 30);
-  console.log("🚀 ~ file: index.js:58 ~ width:", width);
-
-  nexBtn.addEventListener("click", function () {
-    handleChangeSlide(1);
+  const carousel = doc.querySelector(".slide-carousel");
+  const arrowIcon = doc.querySelectorAll(".slide-wrapper span");
+  const firstItem = carousel.querySelectorAll(".item2 ")[0];
+  let isDragStart = false,
+    prevPageX,
+    prevScrollLeft,
+    firstItemWidth = firstItem.clientWidth + 14;
+  const controlIcon = () => {
+    arrowIcon[0].style.display = carousel.scrollLeft === 0 ? "none" : "block";
+  };
+  arrowIcon.forEach((icon) => {
+    icon.addEventListener("click", () => {
+      carousel.scrollLeft +=
+        icon.id === "slide-btnPrev" ? -firstItemWidth : +firstItemWidth;
+      setTimeout(() => {
+        controlIcon(), 60;
+      });
+    });
   });
-  prevBtn.addEventListener("click", function () {
-    handleChangeSlide(-1);
-  });
-  function handleChangeSlide(dir) {
-    if (dir === 1) {
-      positionX = positionX - (sliderItemWidth + 30);
-      sliderMain.style = `transform: translateX(${positionX}px)`;
-      console.log("next", positionX);
-    } else if (dir === -1) {
-      console.log("prev");
-    }
-  }
-  function sumSliderItem(arr, width, gap = 0) {
-    console.log(
-      "🚀 ~ file: index.js:76 ~ sumSliderItem ~ arr, width, gap:",
-      arr,
-      width,
-      gap
-    );
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-      sum += arr[i].offsetWidth;
-    }
-    console.log("🚀 ~ file: index.js:85 ~ sumSliderItem ~ sum:", sum);
-    return Math.floor((sum + (arr.length - 1) * gap) / width);
-  }
+
+  const dragging = (e) => {
+    if (!isDragStart) return;
+    e.preventDefault();
+    let positionDiff = e.pageX - prevPageX;
+    carousel.classList.add("dragging");
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
+  };
+  const dragStart = (e) => {
+    isDragStart = true;
+    prevPageX = e.pageX;
+    prevScrollLeft = carousel.scrollLeft;
+  };
+  const dragStop = () => {
+    isDragStart = false;
+    carousel.classList.remove("dragging");
+  };
+  carousel.addEventListener("mousedown", dragStart);
+  carousel.addEventListener("mousemove", dragging);
+  carousel.addEventListener("mouseup", dragStop);
 });
