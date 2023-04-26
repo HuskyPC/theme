@@ -124,21 +124,21 @@ function changeColorTheme(id) {
 window.addEventListener("load", function () {
   const carousel = doc.querySelector(".slide-carousel");
   const arrowIcon = doc.querySelectorAll(".slide-wrapper span");
-  const firstItem = carousel.querySelectorAll(".item2 ")[0];
+  const firstItem = carousel.querySelectorAll(".item2")[0];
   let isDragStart = false,
     prevPageX,
     prevScrollLeft,
     firstItemWidth = firstItem.clientWidth + 14;
-  const controlIcon = () => {
-    arrowIcon[0].style.display = carousel.scrollLeft === 0 ? "none" : "block";
-  };
+  // const controlIcon = () => {
+  //   arrowIcon[0].style.display = carousel.scrollLeft === 0 ? "none" : "block";
+  // };
   arrowIcon.forEach((icon) => {
     icon.addEventListener("click", () => {
       carousel.scrollLeft +=
         icon.id === "slide-btnPrev" ? -firstItemWidth : +firstItemWidth;
-      setTimeout(() => {
-        controlIcon(), 60;
-      });
+      // setTimeout(() => {
+      //   controlIcon(), 60;
+      // });
     });
   });
 
