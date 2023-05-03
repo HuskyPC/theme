@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style/style.css" />
     <link rel="stylesheet" href="./css/responsive/index.css" />
     <script src="./js/index.js"></script>
-    <title>Document</title>
+    <title>Home</title>
   </head>
   <body>
     <header class="header">
@@ -269,7 +269,7 @@
                         />
                       </svg>
                     </span>
-                    <a href="#" class="dropdown-link">dark</a>
+                    <span class="dropdown-link">dark</span>
                   </li>
                   <li class="dropdown-item" onclick="changeColorTheme(-1)">
                     <span class="header-search-button">
@@ -288,12 +288,16 @@
                         />
                       </svg>
                     </span>
-                    <a href="#" class="dropdown-link">system</a>
+                    <span class="dropdown-link">system</span>
                   </li>
                 </ul>
               </div>
               <div class="header-auth dropdown">
-                <img src="./asset/images/d-avatar.png" alt="images-auth" />
+                <img
+                  src="./asset/images/d-avatar.png"
+                  alt="images-auth"
+                  class="images-auth"
+                />
                 <ul class="dropdown-list">
                   <li class="dropdown-item">
                     <a href="#" class="dropdown-link">Your profile </a>
@@ -409,126 +413,44 @@
         </div>
       </div>
     </section>
-    <section class="content container">
-      <div class="slide-wrapper">
-        <span class="slide-btnPrev" id="slide-btnPrev">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 19.5L8.25 12l7.5-7.5"
-            />
-          </svg>
-        </span>
-        <span class="slide-btnNext" id="slide-btnNext">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M8.25 4.5l7.5 7.5-7.5 7.5"
-            />
-          </svg>
-        </span>
-        <div class="slide-carousel">
-          <div class="item2">
-            <div class="item2-header">
-              <span class="item2-icon-premium">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
-                  />
-                </svg>
-              </span>
-              <span class="item2-icon-favorite">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                  />
-                </svg>
-              </span>
-              <img
-                class="item2-img"
-                src="./asset/images/no-image.jpg"
-                alt="no-image"
+    <section class="content">
+      <div class="container">
+        <h3 class="content-title">Video mới</h3>
+        <div class="slide-wrapper">
+          <span class="slide-btnPrev" id="slide-btnPrev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
               />
-            </div>
-            <div class="item2-footer">
-              <a href="#">
-                <img
-                  class="item2-img-author"
-                  src="./asset/images/d-avatar.png"
-                  alt="d-avatar"
-                />
-              </a>
-              <div class="item2-content">
-                <a href="#" class="item2-title Line">
-                  1Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus tenetur magni, rem nulla harum assumenda quos
-                  nostrum fuga corrupti distinctio nisi quidem et quod.
-                  Explicabo suscipit tempora quasi nulla fugiat.
-                </a>
-                <div class="item2-bottom">
-                  <a href="#" class="item2-author-link">huskyPC</a>
-                  <div class="item2-more">
-                    <span class="item2-view">
-                      <span class="item2-view-icon">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="w-6 h-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                          />
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                          />
-                        </svg>
-                      </span>
-                      12k view
-                    </span>
-                    <span class="item2-date">08/2022</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item2-toggle">
-                <span class="item2-toggle-icon">
+            </svg>
+          </span>
+          <span class="slide-btnNext" id="slide-btnNext">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </span>
+          <div class="slide-carousel">
+            <div class="item2">
+              <div class="item2-header">
+                <span class="item2-icon-premium">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -539,100 +461,100 @@
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
                     />
                   </svg>
                 </span>
-              </div>
-            </div>
-          </div>
-          <div class="item2">
-            <div class="item2-header">
-              <span class="item2-icon-premium">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
-                  />
-                </svg>
-              </span>
-              <span class="item2-icon-favorite">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                  />
-                </svg>
-              </span>
-              <img
-                class="item2-img"
-                src="./asset/images/no-image.jpg"
-                alt="no-image"
-              />
-            </div>
-            <div class="item2-footer">
-              <a href="#">
+                <span class="item2-icon-favorite">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                    />
+                  </svg>
+                </span>
                 <img
-                  class="item2-img-author"
-                  src="./asset/images/d-avatar.png"
-                  alt="d-avatar"
+                  class="item2-img"
+                  src="./asset/images/no-image.jpg"
+                  alt="no-image"
                 />
-              </a>
-              <div class="item2-content">
-                <a href="#" class="item2-title Line">
-                  2Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus tenetur magni, rem nulla harum assumenda quos
-                  nostrum fuga corrupti distinctio nisi quidem et quod.
-                  Explicabo suscipit tempora quasi nulla fugiat.
+              </div>
+              <div class="item2-footer">
+                <a href="#">
+                  <img
+                    class="item2-img-author"
+                    src="./asset/images/d-avatar.png"
+                    alt="d-avatar"
+                  />
                 </a>
-                <div class="item2-bottom">
-                  <a href="#" class="item2-author-link">huskyPC</a>
-                  <div class="item2-more">
-                    <span class="item2-view">
-                      <span class="item2-view-icon">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="w-6 h-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                          />
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                          />
-                        </svg>
+                <div class="item2-content">
+                  <a href="/pages/video/detail.html" class="item2-title Line">
+                    1Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus tenetur magni, rem nulla harum assumenda quos
+                    nostrum fuga corrupti distinctio nisi quidem et quod.
+                    Explicabo suscipit tempora quasi nulla fugiat.
+                  </a>
+                  <div class="item2-bottom">
+                    <a href="#" class="item2-author-link">huskyPC</a>
+                    <div class="item2-more">
+                      <span class="item2-view">
+                        <span class="item2-view-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                          </svg>
+                        </span>
+                        12k view
                       </span>
-                      12k view
-                    </span>
-                    <span class="item2-date">08/2022</span>
+                      <span class="item2-date">08/2022</span>
+                    </div>
                   </div>
                 </div>
+                <div class="item2-toggle">
+                  <span class="item2-toggle-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      />
+                    </svg>
+                  </span>
+                </div>
               </div>
-              <div class="item2-toggle">
-                <span class="item2-toggle-icon">
+            </div>
+            <div class="item2">
+              <div class="item2-header">
+                <span class="item2-icon-premium">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -643,100 +565,100 @@
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
                     />
                   </svg>
                 </span>
-              </div>
-            </div>
-          </div>
-          <div class="item2">
-            <div class="item2-header">
-              <span class="item2-icon-premium">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
-                  />
-                </svg>
-              </span>
-              <span class="item2-icon-favorite">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                  />
-                </svg>
-              </span>
-              <img
-                class="item2-img"
-                src="./asset/images/no-image.jpg"
-                alt="no-image"
-              />
-            </div>
-            <div class="item2-footer">
-              <a href="#">
+                <span class="item2-icon-favorite">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                    />
+                  </svg>
+                </span>
                 <img
-                  class="item2-img-author"
-                  src="./asset/images/d-avatar.png"
-                  alt="d-avatar"
+                  class="item2-img"
+                  src="./asset/images/no-image.jpg"
+                  alt="no-image"
                 />
-              </a>
-              <div class="item2-content">
-                <a href="#" class="item2-title Line">
-                  3Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus tenetur magni, rem nulla harum assumenda quos
-                  nostrum fuga corrupti distinctio nisi quidem et quod.
-                  Explicabo suscipit tempora quasi nulla fugiat.
+              </div>
+              <div class="item2-footer">
+                <a href="#">
+                  <img
+                    class="item2-img-author"
+                    src="./asset/images/d-avatar.png"
+                    alt="d-avatar"
+                  />
                 </a>
-                <div class="item2-bottom">
-                  <a href="#" class="item2-author-link">huskyPC</a>
-                  <div class="item2-more">
-                    <span class="item2-view">
-                      <span class="item2-view-icon">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="w-6 h-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                          />
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                          />
-                        </svg>
+                <div class="item2-content">
+                  <a href="#" class="item2-title Line">
+                    2Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus tenetur magni, rem nulla harum assumenda quos
+                    nostrum fuga corrupti distinctio nisi quidem et quod.
+                    Explicabo suscipit tempora quasi nulla fugiat.
+                  </a>
+                  <div class="item2-bottom">
+                    <a href="#" class="item2-author-link">huskyPC</a>
+                    <div class="item2-more">
+                      <span class="item2-view">
+                        <span class="item2-view-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                          </svg>
+                        </span>
+                        12k view
                       </span>
-                      12k view
-                    </span>
-                    <span class="item2-date">08/2022</span>
+                      <span class="item2-date">08/2022</span>
+                    </div>
                   </div>
                 </div>
+                <div class="item2-toggle">
+                  <span class="item2-toggle-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      />
+                    </svg>
+                  </span>
+                </div>
               </div>
-              <div class="item2-toggle">
-                <span class="item2-toggle-icon">
+            </div>
+            <div class="item2">
+              <div class="item2-header">
+                <span class="item2-icon-premium">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -747,100 +669,100 @@
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
                     />
                   </svg>
                 </span>
-              </div>
-            </div>
-          </div>
-          <div class="item2">
-            <div class="item2-header">
-              <span class="item2-icon-premium">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
-                  />
-                </svg>
-              </span>
-              <span class="item2-icon-favorite">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                  />
-                </svg>
-              </span>
-              <img
-                class="item2-img"
-                src="./asset/images/no-image.jpg"
-                alt="no-image"
-              />
-            </div>
-            <div class="item2-footer">
-              <a href="#">
+                <span class="item2-icon-favorite">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                    />
+                  </svg>
+                </span>
                 <img
-                  class="item2-img-author"
-                  src="./asset/images/d-avatar.png"
-                  alt="d-avatar"
+                  class="item2-img"
+                  src="./asset/images/no-image.jpg"
+                  alt="no-image"
                 />
-              </a>
-              <div class="item2-content">
-                <a href="#" class="item2-title Line">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus tenetur magni, rem nulla harum assumenda quos
-                  nostrum fuga corrupti distinctio nisi quidem et quod.
-                  Explicabo suscipit tempora quasi nulla fugiat.
+              </div>
+              <div class="item2-footer">
+                <a href="#">
+                  <img
+                    class="item2-img-author"
+                    src="./asset/images/d-avatar.png"
+                    alt="d-avatar"
+                  />
                 </a>
-                <div class="item2-bottom">
-                  <a href="#" class="item2-author-link">huskyPC</a>
-                  <div class="item2-more">
-                    <span class="item2-view">
-                      <span class="item2-view-icon">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="w-6 h-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                          />
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                          />
-                        </svg>
+                <div class="item2-content">
+                  <a href="#" class="item2-title Line">
+                    3Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus tenetur magni, rem nulla harum assumenda quos
+                    nostrum fuga corrupti distinctio nisi quidem et quod.
+                    Explicabo suscipit tempora quasi nulla fugiat.
+                  </a>
+                  <div class="item2-bottom">
+                    <a href="#" class="item2-author-link">huskyPC</a>
+                    <div class="item2-more">
+                      <span class="item2-view">
+                        <span class="item2-view-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                          </svg>
+                        </span>
+                        12k view
                       </span>
-                      12k view
-                    </span>
-                    <span class="item2-date">08/2022</span>
+                      <span class="item2-date">08/2022</span>
+                    </div>
                   </div>
                 </div>
+                <div class="item2-toggle">
+                  <span class="item2-toggle-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      />
+                    </svg>
+                  </span>
+                </div>
               </div>
-              <div class="item2-toggle">
-                <span class="item2-toggle-icon">
+            </div>
+            <div class="item2">
+              <div class="item2-header">
+                <span class="item2-icon-premium">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -851,100 +773,100 @@
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
                     />
                   </svg>
                 </span>
-              </div>
-            </div>
-          </div>
-          <div class="item2">
-            <div class="item2-header">
-              <span class="item2-icon-premium">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
-                  />
-                </svg>
-              </span>
-              <span class="item2-icon-favorite">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                  />
-                </svg>
-              </span>
-              <img
-                class="item2-img"
-                src="./asset/images/no-image.jpg"
-                alt="no-image"
-              />
-            </div>
-            <div class="item2-footer">
-              <a href="#">
+                <span class="item2-icon-favorite">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                    />
+                  </svg>
+                </span>
                 <img
-                  class="item2-img-author"
-                  src="./asset/images/d-avatar.png"
-                  alt="d-avatar"
+                  class="item2-img"
+                  src="./asset/images/no-image.jpg"
+                  alt="no-image"
                 />
-              </a>
-              <div class="item2-content">
-                <a href="#" class="item2-title Line">
-                  4Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus tenetur magni, rem nulla harum assumenda quos
-                  nostrum fuga corrupti distinctio nisi quidem et quod.
-                  Explicabo suscipit tempora quasi nulla fugiat.
+              </div>
+              <div class="item2-footer">
+                <a href="#">
+                  <img
+                    class="item2-img-author"
+                    src="./asset/images/d-avatar.png"
+                    alt="d-avatar"
+                  />
                 </a>
-                <div class="item2-bottom">
-                  <a href="#" class="item2-author-link">huskyPC</a>
-                  <div class="item2-more">
-                    <span class="item2-view">
-                      <span class="item2-view-icon">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="w-6 h-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                          />
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                          />
-                        </svg>
+                <div class="item2-content">
+                  <a href="#" class="item2-title Line">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus tenetur magni, rem nulla harum assumenda quos
+                    nostrum fuga corrupti distinctio nisi quidem et quod.
+                    Explicabo suscipit tempora quasi nulla fugiat.
+                  </a>
+                  <div class="item2-bottom">
+                    <a href="#" class="item2-author-link">huskyPC</a>
+                    <div class="item2-more">
+                      <span class="item2-view">
+                        <span class="item2-view-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                          </svg>
+                        </span>
+                        12k view
                       </span>
-                      12k view
-                    </span>
-                    <span class="item2-date">08/2022</span>
+                      <span class="item2-date">08/2022</span>
+                    </div>
                   </div>
                 </div>
+                <div class="item2-toggle">
+                  <span class="item2-toggle-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      />
+                    </svg>
+                  </span>
+                </div>
               </div>
-              <div class="item2-toggle">
-                <span class="item2-toggle-icon">
+            </div>
+            <div class="item2">
+              <div class="item2-header">
+                <span class="item2-icon-premium">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -955,100 +877,100 @@
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
                     />
                   </svg>
                 </span>
-              </div>
-            </div>
-          </div>
-          <div class="item2">
-            <div class="item2-header">
-              <span class="item2-icon-premium">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
-                  />
-                </svg>
-              </span>
-              <span class="item2-icon-favorite">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                  />
-                </svg>
-              </span>
-              <img
-                class="item2-img"
-                src="./asset/images/no-image.jpg"
-                alt="no-image"
-              />
-            </div>
-            <div class="item2-footer">
-              <a href="#">
+                <span class="item2-icon-favorite">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                    />
+                  </svg>
+                </span>
                 <img
-                  class="item2-img-author"
-                  src="./asset/images/d-avatar.png"
-                  alt="d-avatar"
+                  class="item2-img"
+                  src="./asset/images/no-image.jpg"
+                  alt="no-image"
                 />
-              </a>
-              <div class="item2-content">
-                <a href="#" class="item2-title Line">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus tenetur magni, rem nulla harum assumenda quos
-                  nostrum fuga corrupti distinctio nisi quidem et quod.
-                  Explicabo suscipit tempora quasi nulla fugiat.
+              </div>
+              <div class="item2-footer">
+                <a href="#">
+                  <img
+                    class="item2-img-author"
+                    src="./asset/images/d-avatar.png"
+                    alt="d-avatar"
+                  />
                 </a>
-                <div class="item2-bottom">
-                  <a href="#" class="item2-author-link">huskyPC</a>
-                  <div class="item2-more">
-                    <span class="item2-view">
-                      <span class="item2-view-icon">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="w-6 h-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                          />
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                          />
-                        </svg>
+                <div class="item2-content">
+                  <a href="#" class="item2-title Line">
+                    4Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus tenetur magni, rem nulla harum assumenda quos
+                    nostrum fuga corrupti distinctio nisi quidem et quod.
+                    Explicabo suscipit tempora quasi nulla fugiat.
+                  </a>
+                  <div class="item2-bottom">
+                    <a href="#" class="item2-author-link">huskyPC</a>
+                    <div class="item2-more">
+                      <span class="item2-view">
+                        <span class="item2-view-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                          </svg>
+                        </span>
+                        12k view
                       </span>
-                      12k view
-                    </span>
-                    <span class="item2-date">08/2022</span>
+                      <span class="item2-date">08/2022</span>
+                    </div>
                   </div>
                 </div>
+                <div class="item2-toggle">
+                  <span class="item2-toggle-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      />
+                    </svg>
+                  </span>
+                </div>
               </div>
-              <div class="item2-toggle">
-                <span class="item2-toggle-icon">
+            </div>
+            <div class="item2">
+              <div class="item2-header">
+                <span class="item2-icon-premium">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -1059,100 +981,100 @@
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
                     />
                   </svg>
                 </span>
-              </div>
-            </div>
-          </div>
-          <div class="item2">
-            <div class="item2-header">
-              <span class="item2-icon-premium">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
-                  />
-                </svg>
-              </span>
-              <span class="item2-icon-favorite">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                  />
-                </svg>
-              </span>
-              <img
-                class="item2-img"
-                src="./asset/images/no-image.jpg"
-                alt="no-image"
-              />
-            </div>
-            <div class="item2-footer">
-              <a href="#">
+                <span class="item2-icon-favorite">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                    />
+                  </svg>
+                </span>
                 <img
-                  class="item2-img-author"
-                  src="./asset/images/d-avatar.png"
-                  alt="d-avatar"
+                  class="item2-img"
+                  src="./asset/images/no-image.jpg"
+                  alt="no-image"
                 />
-              </a>
-              <div class="item2-content">
-                <a href="#" class="item2-title Line">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus tenetur magni, rem nulla harum assumenda quos
-                  nostrum fuga corrupti distinctio nisi quidem et quod.
-                  Explicabo suscipit tempora quasi nulla fugiat.
+              </div>
+              <div class="item2-footer">
+                <a href="#">
+                  <img
+                    class="item2-img-author"
+                    src="./asset/images/d-avatar.png"
+                    alt="d-avatar"
+                  />
                 </a>
-                <div class="item2-bottom">
-                  <a href="#" class="item2-author-link">huskyPC</a>
-                  <div class="item2-more">
-                    <span class="item2-view">
-                      <span class="item2-view-icon">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="w-6 h-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                          />
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                          />
-                        </svg>
+                <div class="item2-content">
+                  <a href="#" class="item2-title Line">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus tenetur magni, rem nulla harum assumenda quos
+                    nostrum fuga corrupti distinctio nisi quidem et quod.
+                    Explicabo suscipit tempora quasi nulla fugiat.
+                  </a>
+                  <div class="item2-bottom">
+                    <a href="#" class="item2-author-link">huskyPC</a>
+                    <div class="item2-more">
+                      <span class="item2-view">
+                        <span class="item2-view-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                          </svg>
+                        </span>
+                        12k view
                       </span>
-                      12k view
-                    </span>
-                    <span class="item2-date">08/2022</span>
+                      <span class="item2-date">08/2022</span>
+                    </div>
                   </div>
                 </div>
+                <div class="item2-toggle">
+                  <span class="item2-toggle-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      />
+                    </svg>
+                  </span>
+                </div>
               </div>
-              <div class="item2-toggle">
-                <span class="item2-toggle-icon">
+            </div>
+            <div class="item2">
+              <div class="item2-header">
+                <span class="item2-icon-premium">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -1163,16 +1085,104 @@
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
                     />
                   </svg>
                 </span>
+                <span class="item2-icon-favorite">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                    />
+                  </svg>
+                </span>
+                <img
+                  class="item2-img"
+                  src="./asset/images/no-image.jpg"
+                  alt="no-image"
+                />
+              </div>
+              <div class="item2-footer">
+                <a href="#">
+                  <img
+                    class="item2-img-author"
+                    src="./asset/images/d-avatar.png"
+                    alt="d-avatar"
+                  />
+                </a>
+                <div class="item2-content">
+                  <a href="#" class="item2-title Line">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus tenetur magni, rem nulla harum assumenda quos
+                    nostrum fuga corrupti distinctio nisi quidem et quod.
+                    Explicabo suscipit tempora quasi nulla fugiat.
+                  </a>
+                  <div class="item2-bottom">
+                    <a href="#" class="item2-author-link">huskyPC</a>
+                    <div class="item2-more">
+                      <span class="item2-view">
+                        <span class="item2-view-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                          </svg>
+                        </span>
+                        12k view
+                      </span>
+                      <span class="item2-date">08/2022</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item2-toggle">
+                  <span class="item2-toggle-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      />
+                    </svg>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div></div>
+    </footer>
   </body>
 </html>
 
