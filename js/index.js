@@ -60,7 +60,7 @@ function changeColorTheme(id) {
   } else if (id === -1 && !isDark) temp = 1;
   if (temp === 1) {
     // light
-    r.style.setProperty("--primary", "248 250 252");
+    r.style.setProperty("--primary", "238 238 238");
     r.style.setProperty("--text", "51 65 85");
     r.style.setProperty("--secondary", "255 255 255");
     r.style.setProperty("--itemDark", "235 248 254");
